@@ -1,0 +1,8 @@
+<h1> Search Movie page</h1>
+
+<%= params.inspect %>
+
+<% @movies.each do |movie| %>
+<p><%= movie.title %></p>
+<p><%= movie.year %></p>
+<% end %>

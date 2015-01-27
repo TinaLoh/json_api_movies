@@ -1,0 +1,17 @@
+
+
+<h1>Welcome to my API to search for movies!  </h1>
+
+<h3> Use "/all" should return a json object with all of the movies in the database
+  "/search/?t=harry" should return a json object with all the movies with 'harry' in their title</h3>
+
+  <h3> Use "/search/?y=2001" should return a json object with all the movies made in 2001</h3>
+
+  <h3> Use "/search/?t=harry y=2001" should return a json object with all the movies with 'harry' in their title that were made in 2001 </h3>
+
+
+  <%= form_tag ('/search') do %>
+  Title: <input type='text' name='t'>
+  Year: <input type='text' name='y'>
+  <div><%= submit_tag "Search" %></div>
+  <% end %>
